@@ -1,0 +1,85 @@
+/* Colores principales */
+:root {
+    --color-primary: #2c3e50; /* Azul oscuro (color principal) */
+    --color-secondary: #e74c3c; /* Rojo (color secundario) */
+    --color-accent: #1abc9c; /* Verde agua (color de acento) */
+    --color-background: #ecf0f1; /* Gris claro (fondo) */
+    --color-text: #34495e; /* Gris oscuro (texto principal) */
+}
+
+/* Navbar personalizada */
+.navbar-custom {
+    background-color: var(--color-primary) !important; /* Fondo azul oscuro */
+}
+
+.navbar-custom .navbar-brand {
+    color: white !important; /* Texto blanco para el título */
+    font-weight: bold; /* Negrita */
+}
+
+/* Estilos para el contenedor del historial */
+#historyContainer {
+    background-color: white; /* Fondo blanco */
+    padding: 1rem; /* Espaciado interno */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    border: 1px solid var(--color-primary); /* Borde azul oscuro */
+    margin-top: 1rem; /* Margen superior */
+}
+
+/* Estilos para cada entrada del historial */
+.historial-entry {
+    background-color: var(--color-background); /* Fondo gris claro */
+    padding: 1rem; /* Espaciado interno */
+    margin-bottom: 1rem; /* Margen inferior */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    border: 1px solid var(--color-primary); /* Borde azul oscuro */
+}
+
+.historial-entry p {
+    margin: 0.5rem 0; /* Margen para los párrafos */
+    color: var(--color-text); /* Texto gris oscuro */
+}
+
+.historial-entry strong {
+    color: var(--color-primary); /* Texto azul oscuro para etiquetas fuertes */
+}
+
+.historial-entry ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding-left: 0; /* Quita el padding izquierdo */
+}
+
+.historial-entry ul li {
+    background-color: white; /* Fondo blanco para cada elemento de la lista */
+    padding: 0.5rem; /* Espaciado interno */
+    margin-bottom: 0.5rem; /* Margen inferior */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    border: 1px solid var(--color-primary); /* Borde azul oscuro */
+}
+
+/* Botón personalizado para volver al formulario */
+.btn-volver {
+    background-color: var(--color-accent); /* Fondo verde agua */
+    border: none; /* Sin borde */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    padding: 0.5rem 1.5rem; /* Espaciado interno */
+    margin-top: 1rem; /* Margen superior */
+    color: white; /* Texto blanco */
+    font-weight: bold; /* Negrita */
+}
+
+.btn-volver:hover {
+    background-color: #16a085; /* Cambia el color al pasar el mouse */
+}
+
+/* Footer personalizado */
+.footer-custom {
+    background-color: var(--color-primary); /* Fondo azul oscuro */
+    color: white; /* Texto blanco */
+    padding: 1rem 0; /* Espaciado interno */
+    margin-top: 2rem; /* Margen superior */
+}
+
+.footer-custom .text-muted {
+    color: white !important; /* Texto blanco para elementos con clase text-muted */
+}

@@ -1,0 +1,129 @@
+/* Colores principales */
+:root {
+    --color-primary: #2c3e50; /* Azul oscuro (color principal) */
+    --color-secondary: #e74c3c; /* Rojo (color secundario) */
+    --color-accent: #1abc9c; /* Verde agua (color de acento) */
+    --color-background: #ecf0f1; /* Gris claro (fondo) */
+    --color-text: #34495e; /* Gris oscuro (texto principal) */
+}
+
+/* Navbar personalizada */
+.navbar-custom {
+    background-color: var(--color-primary) !important; /* Fondo azul oscuro */
+}
+
+.navbar-custom .navbar-brand {
+    color: white !important; /* Texto blanco para el título */
+    font-weight: bold; /* Negrita */
+}
+
+.navbar-custom .btn-light {
+    background-color: var(--color-accent); /* Fondo verde agua */
+    border: none; /* Sin borde */
+    color: white; /* Texto blanco */
+    font-weight: bold; /* Negrita */
+}
+
+.navbar-custom .btn-light:hover {
+    background-color: #16a085; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos para el formulario */
+.form-group {
+    margin-bottom: 1.5rem; /* Margen inferior para los grupos de formulario */
+}
+
+.required-field::after {
+    content: " *"; /* Agrega un asterisco a los campos obligatorios */
+    color: var(--color-secondary); /* Color rojo para el asterisco */
+}
+
+.form-control {
+    border-radius: 0.5rem; /* Bordes redondeados */
+    border: 1px solid var(--color-primary); /* Borde azul oscuro */
+}
+
+.form-control:focus {
+    border-color: var(--color-accent); /* Borde verde agua al enfocar */
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.5); /* Sombra al enfocar */
+}
+
+/* Botones personalizados */
+.btn-primary {
+    background-color: var(--color-accent); /* Fondo verde agua */
+    border: none; /* Sin borde */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    padding: 0.5rem 1.5rem; /* Espaciado interno */
+}
+
+.btn-primary:hover {
+    background-color: #16a085; /* Cambia el color al pasar el mouse */
+}
+
+.btn-secondary {
+    background-color: var(--color-primary); /* Fondo azul oscuro */
+    border: none; /* Sin borde */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    padding: 0.5rem 1.5rem; /* Espaciado interno */
+}
+
+.btn-secondary:hover {
+    background-color: #34495e; /* Cambia el color al pasar el mouse */
+}
+
+.btn-success {
+    background-color: var(--color-secondary); /* Fondo rojo */
+    border: none; /* Sin borde */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    padding: 0.5rem 1.5rem; /* Espaciado interno */
+}
+
+.btn-success:hover {
+    background-color: #c0392b; /* Cambia el color al pasar el mouse */
+}
+
+/* Sección de elementos disponibles */
+#elementsContainer {
+    background-color: white; /* Fondo blanco */
+    padding: 1rem; /* Espaciado interno */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    border: 1px solid var(--color-primary); /* Borde azul oscuro */
+}
+
+.element-group {
+    background-color: var(--color-background); /* Fondo gris claro */
+    padding: 1rem; /* Espaciado interno */
+    margin-bottom: 1rem; /* Margen inferior */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    border: 1px solid var(--color-primary); /* Borde azul oscuro */
+}
+
+.element-group label {
+    font-weight: bold; /* Texto en negrita */
+    color: var(--color-text); /* Texto gris oscuro */
+}
+
+/* Resultados */
+#results {
+    background-color: white; /* Fondo blanco */
+    padding: 1rem; /* Espaciado interno */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    border: 1px solid var(--color-primary); /* Borde azul oscuro */
+}
+
+#resultText {
+    font-size: 1.1rem; /* Tamaño de fuente */
+    color: var(--color-text); /* Texto gris oscuro */
+}
+
+/* Footer personalizado */
+.footer-custom {
+    background-color: var(--color-primary); /* Fondo azul oscuro */
+    color: white; /* Texto blanco */
+    padding: 1rem 0; /* Espaciado interno */
+    margin-top: 2rem; /* Margen superior */
+}
+
+.footer-custom .text-muted {
+    color: white !important; /* Texto blanco para elementos con clase text-muted */
+}

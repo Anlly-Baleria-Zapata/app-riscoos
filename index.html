@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>software escalar riscos</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar: Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <a class="navbar-brand" href="#">Optimización de Escalada</a> <!-- Título de la aplicación -->
+        <!-- Botón para ir a la página de historial -->
+        <button class="btn btn-light ml-auto" onclick="window.location.href='historial.html'">Ver Historial</button>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container mt-4">
+        <!-- Título y descripción -->
+        <h2>Optimización de Elementos para Escalada</h2>
+        <p>Ingrese los detalles para determinar los elementos óptimos para escalar.</p>
+
+        <!-- Formulario de entrada -->
+        <form id="optimizationForm">
+            <!-- Requisitos globales: Calorías mínimas y peso máximo -->
+            <div class="form-group">
+                <label for="minCalories" class="required-field">Calorías Mínimas Requeridas</label>
+                <input type="number" class="form-control" id="minCalories" required> <!-- Campo para ingresar calorías mínimas -->
+            </div>
+            <div class="form-group">
+                <label for="maxWeight" class="required-field">Peso Máximo Permitido (g)</label>
+                <input type="number" class="form-control" id="maxWeight" required> <!-- Campo para ingresar peso máximo -->
+            </div>
+
+            <!-- Lista de elementos disponibles -->
+            <div class="form-group">
+                <label class="required-field">Elementos Disponibles</label>
+                <div id="elementsContainer">
+                    <!-- Los elementos se añadirán aquí dinámicamente mediante JavaScript -->
+                </div>
+                <!-- Botón para añadir nuevos elementos -->
+                <button type="button" class="btn btn-secondary mt-2" onclick="addElement()" id="addElementButton" disabled>Añadir Elemento</button>
+            </div>
+
+            <!-- Botón para calcular la combinación óptima -->
+            <button type="submit" class="btn btn-primary">Calcular Óptimos</button>
+
+            <!-- Botón para guardar y recargar el formulario -->
+            <button type="button" class="btn btn-success btn-guardar" id="guardarButton" onclick="guardarYRecargar()" disabled>Guardar</button>
+        </form>
+
+        <!-- Sección de resultados -->
+        <div id="results" class="mt-4">
+            <h3>Resultados</h3>
+            <p id="resultText">Los elementos recomendados aparecerán aquí.</p> <!-- Aquí se mostrarán los resultados -->
+        </div>
+    </div>
+
+    <!-- Footer: Pie de página -->
+    <footer class="footer-custom">
+        <div class="container text-center">
+            <span class="text-muted">© 2023 Optimización de Escalada. Todos los derechos reservados.</span> <!-- Texto del footer -->
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- jQuery para funcionalidades de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script> <!-- Popper.js para tooltips y popovers -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
+
+    <!-- Script personalizado -->
+    <script src="scripts/main.js"></script> <!-- Enlace al archivo JavaScript principal -->
+
+</body>
+</html>
